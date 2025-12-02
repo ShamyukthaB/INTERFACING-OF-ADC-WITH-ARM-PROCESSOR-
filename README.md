@@ -1,5 +1,3 @@
-# INTERFACING-OF-ADC-WITH-ARM-PROCESSOR
-
 # AIM: 
    To interface and toggle the led with ARM LPC 1768 microprocessor           
            
@@ -33,13 +31,27 @@ simple example.c, Uart Receiver interrupt.c, lcd.c, lcd.h
  
  
 # PROGRAM:
+#include"lcd.h" 
+void ADCExp();
+int main(void)
+{
+ReceiverInterrupt(); 
+init_lcd();
+lcd_putstring(LINE1, "RAANA ADC DEMO "); ADCExp();
+while(1)
+{
+}
+}
+ 
 
 
  
-# RESULTS
+# OUTPUT
 
+<img width="936" height="637" alt="image" src="https://github.com/user-attachments/assets/ca7d1d95-e1f7-4460-b643-d71fb25fd240" />
 
-
+# RESULT
+Thus, an embedded c program to interface ADC with ARM processor was executed and output was verified successfully.
 
 
 
